@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="estilo/style.css" rel="stylesheet">
+	<title>DuckDank</title>
+</head>
+<body>
+	<!-- cabeçalho da página -8% -->
+	<header>
+		<h1 class="logo">Duck<span class="colorLogo">Dank</span></h1>
+		<!-- setor de navegação -->
+		<nav>
+			<button id="btn1"><img src="imagens/homeRegular24.png" class="btn1"></button>
+			<a href="painel.html"><button id="btn2"><img src="imagens/SliderRegular.png" class="btn2"></button></a>
+		</nav>
+	</header>
+	<button id="buttonDown">
+		<img src="imagens/b2.png" id="down">
+	</button>
+	<div id="carta">
+			<img id="imagemDeInteracao"></img>
+			<p id="mensagemDeInteracao"></p>
+			<!-- funcoes de reiniciar, exit e ver menu -->
+			<div class="funcionalidades">
+				<button id="retry">Jogar Novamente</button>
+				<button id="menuButton">Ir para o menu</button>
+				<button id="exit" onclick="sair()">Sair</button>
+			</div>
+			<div class="autoria">
+				<span class="aut">&copy;2023</span>
+				<span class="aut">Atarantula Code</span>
+				<span class="aut">""""""</span>
+			</div>
+		</div>
+	<!-- principal da página -92%-->
+	<main>
+		<!-- carta de interação - ocupar o centro da página-->
+		<h3 id="gameOver"></h3>
+		<img id="duckpixels">
+		<!-- personagem - 40% do main-->
+		<div id="duckDank">
+			<img src="imagens/posicaoinicial.png" id="img">
+		</div>
+
+		<!-- local da velha - 60% do main -->
+		<div id="jogoVelha">
+			<div class="container">
+				
+			</div>
+		</div>
+	</main>
+	<script src="javascript/script.js"></script>
+</body>
+</html>

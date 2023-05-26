@@ -1,0 +1,716 @@
+*{/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-family: "verdana", sans-serif;
+}
+/*cor de fundo*/
+body{
+	background-color: #FFF2BC;
+	overflow: hidden;
+}
+/*header da página -> 8%*/
+header{
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 40px;
+}
+.aut{
+	font-size: 0.8rem;
+	margin: 10px;
+	cursor: default;
+}
+#painel{
+	position: absolute;
+	display: none;
+}
+#btn1,#btn2{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+@media only screen and (max-width: 728px) {
+	nav{
+	display: flex;
+	width: 55%;
+	justify-content: space-evenly;
+	align-items: center;
+	}
+	#down{
+		width: 25px;
+		height: 25px;
+		position: fixed;
+    	top: 12px;
+        right: 12px;
+	}
+	.btn1,.btn2{
+		margin-right: 10px;
+		width: 26px;
+		height: 26px;
+		display: none;
+	}
+	.logo{
+		font-size: 1.45rem;
+		margin: 8px;
+		font-weight: 400;
+		cursor: default;
+		display: none;
+	}
+}
+@media only screen and (min-width: 728px) {
+	nav{
+	display: flex;
+	width: 10%;
+	justify-content: space-evenly;
+	align-items: center;
+	}
+	#down{
+		width: 22px;
+		height: 22px;
+		position: fixed;
+    	top: 12px;
+    	right: 12px;
+	}
+	.btn1,.btn2{
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		display: none;
+	}
+	.logo{
+		font-size: 1.5rem;
+		margin: 8px;
+		font-weight: 400;
+		cursor: default;
+		display: none;
+	}
+}
+
+#buttonDown{
+	margin-right: 8px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	position: fixed;
+	top: 0;
+	right: 8px;
+}
+.colorLogo{
+	color: #ffbd2b;
+}
+/*conteúdo da página -> 92%*/
+main{/*verificar também se o dispositivo está virado*/
+	width: 100vw;
+	height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#duckDank{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	animation: chegada 0.7s;
+}
+/*personagem responsivo*/
+@media only screen and (max-width: 220px) {
+  #img{
+  	margin-top:12px;
+		width: 85%;
+	}
+	#duckpixels{
+	cursor: pointer;
+	position: absolute;
+	width: 16.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 1.4rem;
+  	margin:2px;
+  	border-radius: 5px;
+		width: 20vw;
+		height: 20vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 260px;
+		height: 320px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 2px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 220px) and (max-width: 320px) {
+  #img{
+  	margin-top:12px;
+		width: 75%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 18.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 2.5rem;
+  	margin:2px;
+  	border-radius: 5px;
+		width: 22vw;
+		height: 22vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 240px;
+		height: 300px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 2px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+  #img{
+  	margin-top:12px;
+	width: 75%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 17.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 2.6rem;
+  		margin:2px;
+  		border-radius: 5px;
+		width: 22vw;
+		height: 22vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+		height: 360px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 2px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 410px) and (max-width: 480px) {
+  #img{
+  	margin-top:12px;
+	width: 45%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 15.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 3.5rem;
+  		margin:2px;
+  		border-radius: 5px;
+		width: 23vw;
+		height: 23vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3.2px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 330px;
+		height: 360px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3.2px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 620px) {
+  #img{
+  	margin-top:12px;
+	width: 38%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 12.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 3.4rem;
+  		margin:2px;
+  		border-radius: 5px;
+		width: 17vw;
+		height: 17vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 320px;
+		height: 360px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 620px) and (max-width: 768px) {
+  #img{
+  	margin-top:12px;
+	width: 35%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 5.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 2.8rem;
+  		margin:2px;
+  		border-radius: 5px;
+		width: 75px;
+		height: 75px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 260px;
+		height: 355px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 860px) {
+  #img{
+  	margin-top:12px;
+	width: 40%;
+	}
+	#duckpixels{
+		cursor: pointer;
+		position: absolute;
+		width: 5.5vw;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 5rem;
+  		margin:2px;
+  		border-radius: 5px;
+		width: 16vw;
+		height: 16vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid black;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 470px;
+		height: 510px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 860px) and (max-width: 980px) {
+  #img{
+  	margin-top:12px;
+	width: 35%;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 6.5rem;
+  		border-radius: 5px;
+		width: 15vw;
+		height: 15vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3.3px solid black;
+		margin: 2px;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 480px;
+		height: 540px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 980px) and (max-width: 1120px) {
+  #img{
+  	margin-top:12px;
+	width: 25%;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 3rem;
+  		border-radius: 5px;
+		width: 85px;
+		height: 85px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid black;
+		margin: 2px;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 280px;
+		height: 340px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 1120px) and (max-width: 1240px) {
+  #img{
+  	margin-top:12px;
+	width: 20%;
+	}
+  .container div{
+  	animation: chegada 0.7s;
+  	font-weight: 400;
+  	color: orange;
+  	font-size: 3.4rem;
+  		border-radius: 5px;
+		width: 85px;
+		height: 85px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid black;
+		margin: 2px;
+	}
+	#carta{
+		 display: none;
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 280px;
+		height: 350px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	}
+}
+@media only screen and (min-width: 1120px){
+  #img{
+  	margin-top:12px;
+	width: 18%;
+	}
+	.container div{
+		animation: chegada 0.7s;
+		font-weight: 400;
+		color: orange;
+		font-size: 3.8rem;
+		border-radius: 5px;
+		width: 6.4vw;
+		height: 6.4vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3.3px solid black;
+		margin: 2px;
+	}
+	#carta{
+		background-image: url("../imagens/carta.png");
+		background-color: #8f4f104a;
+		background-position: center;
+		background-size: cover;
+		width: 390px;
+		height: 480px;
+		position: absolute;
+	    z-index: 5;
+	    top: 50%;
+	    left: 50%;
+	    transform: rotateZ(-2deg) translate(-50%, -50%);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 3px solid black;
+	    justify-content: space-evenly;
+	    display: none;
+	}
+}
+/*jogo da velha*/
+#jogoVelha{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.container div:hover{
+	transition: 0.43s;
+	background: #ffeb95;
+	cursor: pointer;
+}
+/*duckpixels customization*/
+@media only screen and (min-width: 860px){
+  #duckpixels{
+  		cursor: pointer;
+		position: absolute;
+		width: 4.2vw;
+	}
+}
+@keyframes duckpixels{
+	0%{
+		transform: scale(0%);
+		opacity: 0.1;
+	}
+	80%{
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(100%);
+		opacity: 1;
+	}
+}
+@keyframes chegada{
+	0%{
+		transform: scale(90%);
+		opacity: 0.3;
+	}
+	100%{
+		transform: scale(100%);
+		opacity: 1;
+	}
+}
+/* carta de interação e gameOverMsg - mensagem*/                  
+
+@keyframes giro{
+	0%{
+		transform: rotateZ(-20deg) translate(-50%, -50%);;
+		opacity: 0;
+	}
+	90%{
+		transform: rotateZ(-20deg) translate(-50%, -50%);;
+		opacity: 0;
+	}
+	100%{
+		transform: rotateZ(-2deg) translate(-50%, -50%);;
+		opacity: 1;
+	}
+}
+#mensagemDeInteracao{
+	cursor: default;
+	margin: 10px;
+	font-size: 1.4rem;
+}
+#retry, #exit, #menuButton{
+   font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+#menuButton:hover{
+	color: orange;
+}
+#retry:hover{
+	color: orange;
+}
+#exit:hover{
+	color: orange;
+}
+
+#imagemDeInteracao{
+	width: 170px;
+	height: 170px;
+	border-radius: 100px;
+	border: 1px solid black;;
+}
+
+#gameOver{
+  display: none;
+  font-family: arial, sans-serif;
+  font-size: 3rem;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  cursor: default;
+  color: #341c02;
+  opacity: 0.8;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+@keyframes entrada{
+	0%{
+		opacity: 0.3;
+		font-size: 3rem;
+	}
+	60%{
+		opacity: 1;
+		font-size: 4.2rem;
+	}
+}
+@keyframes falar{
+	0%{
+		transform: scale(100%);
+	}
+	50%{
+		transform: scale(115%);
+	}
+	100%{
+		transform: scale(100%);
+	}
+}
