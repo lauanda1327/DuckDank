@@ -253,7 +253,7 @@ main{/*verificar também se o dispositivo está virado*/
 @media only screen and (min-width: 410px) and (max-width: 480px) {
   #img{
   	margin-top:12px;
-	width: 45%;
+	width: 55%;
 	}
 	#duckpixels{
 		cursor: pointer;
