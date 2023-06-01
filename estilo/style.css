@@ -158,7 +158,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 2px solid black;
+	    border: 2px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -184,7 +184,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3px solid black;
+		border: 3px solid #0000009e;
 	}
 	#carta{
 		 display: none;
@@ -202,7 +202,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 2px solid black;
+	    border: 2px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -228,7 +228,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3px solid black;
+		border: 3px solid #0000009e;
 	}
 	#carta{
 		display: none;
@@ -246,19 +246,19 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 2px solid black;
+	    border: 2px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
 @media only screen and (min-width: 410px) and (max-width: 480px) {
-  #img{
+  	#img{
   	margin-top: 20px;
 	width: 75%;
 	}
 	#duckpixels{
-		cursor: pointer;
-		position: absolute;
-		width: 15.5vw;
+	cursor: pointer;
+	position: absolute;
+	width: 15.5vw;
 	}
   .container div{
   	animation: chegada 0.7s;
@@ -271,7 +271,10 @@ main{/*verificar também se o dispositivo está virado*/
 	font-weight: 500;
 	align-items: center;
 	justify-content: center;
-	border: 4px solid black;
+	border: 4px solid #0000009e;
+	}
+	p{
+		font-size: 0.8rem;
 	}
 	#carta{
 		 display: none;
@@ -279,8 +282,8 @@ main{/*verificar também se o dispositivo está virado*/
 		background-color: #8f4f104a;
 		background-position: center;
 		background-size: cover;
-		width: 330px;
-		height: 360px;
+		width: 280px;
+		height: 390px;
 		position: absolute;
 	    z-index: 5;
 	    top: 50%;
@@ -289,8 +292,12 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3.2px solid black;
+	    border: 2px solid #0000009e;
 	    justify-content: space-evenly;
+	}
+	#mensagemDeInteracao{
+		font-size:0.9rem;
+		margin: 18px 18px 18px 25px;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 620px) {
@@ -315,7 +322,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3px solid black;
+		border: 3px solid #0000009e;
 	}
 	#carta{
 		 display: none;
@@ -333,7 +340,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -359,7 +366,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3px solid black;
+		border: 3px solid #0000009e;
 	}
 	#carta{
 		 display: none;
@@ -377,7 +384,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -403,7 +410,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3px solid black;
+		border: 3px solid #0000009e;
 	}
 	#carta{
 		 display: none;
@@ -421,7 +428,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -441,7 +448,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3.3px solid black;
+		border: 3.3px solid #0000009e;
 		margin: 2px;
 	}
 	#carta{
@@ -460,7 +467,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -480,7 +487,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 2px solid black;
+		border: 2px solid #0000009e;
 		margin: 2px;
 	}
 	#carta{
@@ -499,7 +506,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -519,7 +526,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 2px solid black;
+		border: 2px solid #0000009e;
 		margin: 2px;
 	}
 	#carta{
@@ -538,7 +545,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	}
 }
@@ -558,7 +565,7 @@ main{/*verificar também se o dispositivo está virado*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 3.3px solid black;
+		border: 3.3px solid #0000009e;
 		margin: 2px;
 	}
 	#carta{
@@ -576,7 +583,7 @@ main{/*verificar também se o dispositivo está virado*/
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    border: 3px solid black;
+	    border: 3px solid #0000009e;
 	    justify-content: space-evenly;
 	    display: none;
 	}
@@ -585,6 +592,7 @@ main{/*verificar também se o dispositivo está virado*/
 #jogoVelha{
 	width: 100vw;
 	display: flex;
+	margin-bottom: 100px;
 	align-items: center;
 	flex-direction: column;
 }
@@ -646,17 +654,20 @@ main{/*verificar também se o dispositivo está virado*/
 		opacity: 1;
 	}
 }
-#mensagemDeInteracao{
-	cursor: default;
-	margin: 10px;
-	font-size: 1.4rem;
-}
+
 #retry, #exit, #menuButton{
    font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
     border: none;
+	margin: 5px;
     background: inherit;
+}
+#imagemDeInteracao {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    border: 1px solid black;
 }
 #menuButton:hover{
 	color: orange;

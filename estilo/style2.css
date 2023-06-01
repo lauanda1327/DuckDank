@@ -26,6 +26,17 @@ tr, th, td{
 	text-align: center;
 	cursor: default;
 }
+@media (max-width: 720px){
+	tr, th, td{
+		border: none;
+		padding: 15px;
+		width: 25vw;
+		font-size: 1.25rem;
+		text-align: center;
+		cursor: default;
+	}
+}
+
 th:hover, td:hover{
 	background-color: #f3ca7e;
 }
