@@ -38,7 +38,7 @@ let ImagensInteracaoVitoria = [
 "imagens/sintilante.png",
 "imagens/tonto.png",
 "imagens/raiva.png",
-"imagens/patoengracado.png",
+"imagens/mitei.png",
 "imagens/raivaintensa.png",
 "imagens/mito.png",
 "imagens/inspirado.png",
@@ -697,11 +697,13 @@ function duckDankJogar(){
 			}
 		}
 	}
-	const audio = new Audio('audio/tap.wav');
+	const audio = new Audio('audio/cool.wav');
 	audio.play();
 }
 function tempoEscolha() {
-	return Math.floor(Math.random() * 1);//entre 0 e 1
+	let x = gerador(0,13)
+	img.src = ImagensInteracaoVitoria[x]
+	return gerador(0,0.5);//entre 0 e 1
 }
 
 async function jogar(e) {
@@ -722,7 +724,7 @@ async function jogar(e) {
 }
 reiniciar.addEventListener('click', () => {
 	//audio
-	const audio = new Audio('audio/cool.wav');
+	const audio = new Audio('audio/tap.wav');
 	audio.play();
 	//deletar a carta de interação e seus componentes
 	document.getElementById('retry').style.display = "none"
@@ -746,7 +748,7 @@ reiniciar.addEventListener('click', () => {
 
 function sair(){
 	//audio
-	const audio = new Audio('audio/cool.wav');
+	const audio = new Audio('audio/tap.wav');
 	audio.play();
 	document.getElementById('carta').style.display = "none"
 }
@@ -774,7 +776,7 @@ buttonDown.addEventListener('click', () => {
 
 	if(repouso == false){
 		//audio
-		const audio = new Audio('audio/cool.wav');
+		const audio = new Audio('audio/tap.wav');
 		audio.play();
 		//inercia
 		let header = document.querySelector('header')
@@ -787,7 +789,7 @@ buttonDown.addEventListener('click', () => {
 		repouso = true
 	}else if(repouso == true){
 		//audio
-		const audio = new Audio('audio/cool.wav');
+		const audio = new Audio('audio/tap.wav');
 		audio.play();
 		//sair da inercia
 		let header = document.querySelector('header')

@@ -252,8 +252,8 @@ main{/*verificar também se o dispositivo está virado*/
 }
 @media only screen and (min-width: 410px) and (max-width: 480px) {
   #img{
-  	margin-top:12px;
-	width: 55%;
+  	margin-top: 20px;
+	width: 75%;
 	}
 	#duckpixels{
 		cursor: pointer;
@@ -262,17 +262,16 @@ main{/*verificar também se o dispositivo está virado*/
 	}
   .container div{
   	animation: chegada 0.7s;
-  	font-weight: 400;
-  	color: orange;
-  	font-size: 3.5rem;
-  		margin:2px;
-  		border-radius: 5px;
-		width: 23vw;
-		height: 23vw;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 3.2px solid black;
+  	font-size:4.6rem;
+  	margin:2px;
+  	border-radius: 5px;
+	width: 23vw;
+	height: 23vw;
+	display: flex;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+	border: 4px solid black;
 	}
 	#carta{
 		 display: none;
